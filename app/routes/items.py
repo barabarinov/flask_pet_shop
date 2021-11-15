@@ -67,6 +67,6 @@ def single_item_of_all_users_handler(item_id):
 @login_required
 def sum_of_all_prices():
     result = 0
-    for item in Item.query.filter(Item.price > 0).all():
+    for item in Item.query.filter(Item.amount > 0).all():
         result += item.amount * item.price
     return {'message': f'Sum of all prices of items = {result}'}

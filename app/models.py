@@ -5,7 +5,6 @@ class User(db.Model):
     __tablename__ = 'users'
 
     id = db.Column(db.Integer, primary_key=True)
-    # amount_of_created_items = db.Colunm(db.)
     username = db.Column(db.String(64), unique=True)
     password = db.Column(db.String(128))
     first_name = db.Column(db.String(64), nullable=False)

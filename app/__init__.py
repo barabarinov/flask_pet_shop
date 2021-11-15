@@ -19,13 +19,12 @@ login_manager.login_view = 'login'
 @login_manager.user_loader
 def load_user(user_id):
     from app.models import User
-
     return User.query.get(int(user_id))
 
 
 from app.routes import *
 from app.models import *
 
-# import ipdb; ipdb.set_trace()
-# db.drop_all()
-# db.create_all()
+import ipdb; ipdb.set_trace()
+db.drop_all()
+db.create_all()

@@ -9,9 +9,6 @@ I used Flask for completing this task. This website allows to add, edit and dele
 
 ___
 
-![](docs/pics/flask_pet_shop.png)
-
----
 To install requirements run:
 
 `pip install -r requirements.txt`
@@ -21,5 +18,7 @@ To install requirements run:
 To run:
 
 `FLASK_APP=app`
+
+`python main.py`
 
 ---
